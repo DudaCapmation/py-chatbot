@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container{
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+header{
+    background: #4a90e2;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.chat-box{
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.chat-box p {
+    margin: 0.5rem 0;
+}
+
+.chat-box .user,
+.chat-box .bot {
+  max-width: 80%;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 12px;
+  word-wrap: break-word;
+  display: block;
+}
+
+.chat-box .user {
+  margin-left: auto;
+  background: #e0f7fa;
+  color: #000;
+}
+
+.chat-box .bot {
+  margin-right: auto;
+  background: #4a90e2;
+  color: white;
+}
+
+.input-container {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #357ab7;
+}
+
+/* Dark mode */
+body.dark {
+    background: #121212;
+}
+
+body.dark .chat-container {
+  background: #1e1e1e;
+}
+
+body.dark header {
+  background: #333;
+}
+
+body.dark .chat-box .user {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+body.dark .chat-box .bot {
+  background: #224266;
+  color: #fff;
+}
+
+body.dark input[type="text"] {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark button {
+  background: #333;
+}
+
+body.dark button:hover{
+    background: #555;
+}

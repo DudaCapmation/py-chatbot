@@ -1,4 +1,4 @@
-# Stores conversarion history so the chatbot remembers what was said
+# Stores conversation history so the chatbot remembers what was said
 
 conversation_history = []
 
