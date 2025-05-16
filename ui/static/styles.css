@@ -88,6 +88,53 @@ button:hover{
     background: #357ab7;
 }
 
+.form-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.form-box input {
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #357ab7;
+}
+
+.switch-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  float: right;
+}
+
+.error-msg {
+  color: #b00020;
+  margin-top: 0.5rem;
+}
+
+.success-msg {
+  color: #007700;
+  margin-top: 0.5rem;
+}
+
+
 /* Dark mode */
 body.dark {
     background: #121212;

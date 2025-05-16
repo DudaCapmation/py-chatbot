@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register • Py Chatbot</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            ✍️ Register
+            <a href="/login" class="switch-link">Login</a>
+        </header>
+
+        <div class="form-box">
+            <input type="text" id="reg-username" placeholder="Choose a username">
+            <input type="password" id="reg-password" placeholder="Choose a password">
+            <button id="reg-btn">Register</button>
+            <p id="reg-error" class="error-msg"></p>
+            <p id="reg-success" class="success-msg"></p>
+        </div>
+    </div>
+
+    <script src="/static/js/register.js"></script>
+</body>
+</html>
