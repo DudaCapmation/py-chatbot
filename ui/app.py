@@ -10,6 +10,14 @@ CORS(app)
 def index():
     return render_template("index.html")
 
+@app.route("/chat")
+def chat():
+    return render_template("chat.html")
+
+@app.route("/unstructured")
+def unstructured():
+    return render_template("unstructured.html")
+
 @app.route("/login")
 def login():
     return render_template("login.html")
